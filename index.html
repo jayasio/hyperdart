@@ -5,83 +5,62 @@
   <meta charset="utf-8">
   <title>Hyperdart</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865 865" height="90vh" width="90vw" class="middler">
-    <defs>
-      <style>
-        .cls-1 {
-          fill: #ff5f40;
-        }
 
-        .cls-2 {
-          fill: #efefef;
-        }
+    <circle id="orange-bg" class="cls-1" cx="432.5" cy="432.5" r="432.5" />
 
-        .cls-3 {
-          fill: #a2b0ba;
-        }
-      </style>
-    </defs>
-    <title></title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_5" data-name="Layer 5">
+    <g id="first-layer" transform-origin=center>
 
-        <circle id="orange-bg" class="cls-1" cx="432.5" cy="432.5" r="432.5" />
+      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 -1.875 -0.875" to="360 -1.875 -0.875" dur="30s" repeatCount="indefinite" />
 
-        <g id="first-layer" transform-origin=center>
+      <path id="first-layer-1" onclick="fun()" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
+      <path id="first-layer-2" class="cls-2" d="M126.13,411.63a323.15,323.15,0,0,1,31.26-139.11L48.73,248.34a425.52,425.52,0,0,0-32.09,273l115.71-46.19A326.3,326.3,0,0,1,126.13,411.63Z" />
+      <path id="first-layer-3" class="cls-3" d="M332.68,109.24,285.41,33.68A424.91,424.91,0,0,0,48.73,248.34l108.66,24.18A325.57,325.57,0,0,1,332.68,109.24Z" />
+      <path id="first-layer-4" class="cls-3" d="M769.3,350.25h77A422.66,422.66,0,0,0,727,129.09l-50,50A323.85,323.85,0,0,1,769.3,350.25Z" />
+      <path id="first-layer-5" class="cls-2" d="M677,179.11l50-50A422.34,422.34,0,0,0,498.24,13.5L495,90.15A323.5,323.5,0,0,1,677,179.11Z" />
+      <path id="first-layer-6" class="cls-2" d="M846.31,350.25h-77a325.15,325.15,0,0,1-34,217.32l67.11,67.11a421.62,421.62,0,0,0,51.77-203A426.13,426.13,0,0,0,846.31,350.25Z" />
+      <path id="first-layer-7" class="cls-3" d="M132.35,475.11,16.64,521.3A423.52,423.52,0,0,0,172.28,767.22l77.13-101A324.37,324.37,0,0,1,132.35,475.11Z" />
+      <path id="first-layer-8" class="cls-3" d="M500.5,732.31V849.39c130.38-21.65,240.62-102.85,301.86-214.71l-67.11-67.11C687.72,654.14,601.85,716.68,500.5,732.31Z" />
+      <path id="first-layer-9" class="cls-2" d="M450.63,736.13a323.14,323.14,0,0,1-201.22-69.92l-77.13,101a421.64,421.64,0,0,0,258.35,87.91,426.77,426.77,0,0,0,69.87-5.74V732.31A326.68,326.68,0,0,1,450.63,736.13Z" />
 
-          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 -1.875 -0.875" to="360 -1.875 -0.875" dur="30s" repeatCount="indefinite" />
+      <g id="second-layer" transform-origin=center>
 
-          <path id="first-layer-1" class="first-layer" onclick="fun()" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
-          <path id="first-layer-2" class="first-layer cls-2" d="M126.13,411.63a323.15,323.15,0,0,1,31.26-139.11L48.73,248.34a425.52,425.52,0,0,0-32.09,273l115.71-46.19A326.3,326.3,0,0,1,126.13,411.63Z" />
-          <path id="first-layer-3" class="first-layer cls-3" d="M332.68,109.24,285.41,33.68A424.91,424.91,0,0,0,48.73,248.34l108.66,24.18A325.57,325.57,0,0,1,332.68,109.24Z" />
-          <path id="first-layer-4" class="first-layer cls-3" d="M769.3,350.25h77A422.66,422.66,0,0,0,727,129.09l-50,50A323.85,323.85,0,0,1,769.3,350.25Z" />
-          <path id="first-layer-5" class="first-layer cls-2" d="M677,179.11l50-50A422.34,422.34,0,0,0,498.24,13.5L495,90.15A323.5,323.5,0,0,1,677,179.11Z" />
-          <path id="first-layer-6" class="first-layer cls-2" d="M846.31,350.25h-77a325.15,325.15,0,0,1-34,217.32l67.11,67.11a421.62,421.62,0,0,0,51.77-203A426.13,426.13,0,0,0,846.31,350.25Z" />
-          <path id="first-layer-7" class="first-layer cls-3" d="M132.35,475.11,16.64,521.3A423.52,423.52,0,0,0,172.28,767.22l77.13-101A324.37,324.37,0,0,1,132.35,475.11Z" />
-          <path id="first-layer-8" class="first-layer cls-3" d="M500.5,732.31V849.39c130.38-21.65,240.62-102.85,301.86-214.71l-67.11-67.11C687.72,654.14,601.85,716.68,500.5,732.31Z" />
-          <path id="first-layer-9" class="first-layer cls-2" d="M450.63,736.13a323.14,323.14,0,0,1-201.22-69.92l-77.13,101a421.64,421.64,0,0,0,258.35,87.91,426.77,426.77,0,0,0,69.87-5.74V732.31A326.68,326.68,0,0,1,450.63,736.13Z" />
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 18.125 -20.875" to="-360 18.125 -20.875" dur="10s" repeatCount="indefinite" />
 
-          <g id="second-layer" transform-origin=center>
+        <path id="second-layer-1" class="cls-3" d="M372.07,172.19l-39.39-62.95A325.57,325.57,0,0,0,157.39,272.52l93.67,20.84A241.37,241.37,0,0,1,372.07,172.19Z" />
+        <path id="second-layer-2" d="M470.63,151.13c7.31,0,14.55.34,21.69,1l2.65-62a327.57,327.57,0,0,0-44.34-3,323.7,323.7,0,0,0-117.95,22.11l39.39,63A239.65,239.65,0,0,1,470.63,151.13Z" />
+        <path id="second-layer-3" class="cls-2" d="M637.55,218.51l39.4-39.4a323.5,323.5,0,0,0-182-89l-2.65,62A239.65,239.65,0,0,1,637.55,218.51Z" />
+        <path id="second-layer-4" class="cls-2" d="M230.13,391.63a239.6,239.6,0,0,1,20.93-98.27l-93.67-20.84a325.73,325.73,0,0,0-25,202.59L234,434.55A241.85,241.85,0,0,1,230.13,391.63Z" />
+        <path id="second-layer-5" d="M234,434.55l-101.6,40.56a324.37,324.37,0,0,0,117.06,191.1l68.07-89.14A240.3,240.3,0,0,1,234,434.55Z" />
+        <path id="second-layer-6" d="M711.13,391.63a239.36,239.36,0,0,1-32,119.86l56.08,56.08a325.15,325.15,0,0,0,34-217.32H707.57A242.14,242.14,0,0,1,711.13,391.63Z" />
+        <path id="second-layer-7" class="cls-3" d="M677,179.11l-39.4,39.4a240,240,0,0,1,70,131.74H769.3A323.85,323.85,0,0,0,677,179.11Z" />
+        <path id="second-layer-8" class="cls-3" d="M500.5,630.28v102c101.35-15.63,187.22-78.17,234.75-164.74l-56.08-56.08A240.61,240.61,0,0,1,500.5,630.28Z" />
+        <path id="second-layer-9" class="cls-2" d="M470.63,632.13a239.54,239.54,0,0,1-153.15-55.06l-68.07,89.14a323.14,323.14,0,0,0,201.22,69.92,326.68,326.68,0,0,0,49.87-3.82v-102A243.44,243.44,0,0,1,470.63,632.13Z" />
 
-            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 18.125 -20.875" to="-360 18.125 -20.875" dur="10s" repeatCount="indefinite" />
+        <g id="third-layer" transform-origin=center>
 
-            <path id="second-layer-1" class="second-layer cls-3" d="M372.07,172.19l-39.39-62.95A325.57,325.57,0,0,0,157.39,272.52l93.67,20.84A241.37,241.37,0,0,1,372.07,172.19Z" />
-            <path id="second-layer-2" class="second-layer" d="M470.63,151.13c7.31,0,14.55.34,21.69,1l2.65-62a327.57,327.57,0,0,0-44.34-3,323.7,323.7,0,0,0-117.95,22.11l39.39,63A239.65,239.65,0,0,1,470.63,151.13Z" />
-            <path id="second-layer-3" class="second-layer cls-2" d="M637.55,218.51l39.4-39.4a323.5,323.5,0,0,0-182-89l-2.65,62A239.65,239.65,0,0,1,637.55,218.51Z" />
-            <path id="second-layer-4" class="second-layer cls-2" d="M230.13,391.63a239.6,239.6,0,0,1,20.93-98.27l-93.67-20.84a325.73,325.73,0,0,0-25,202.59L234,434.55A241.85,241.85,0,0,1,230.13,391.63Z" />
-            <path id="second-layer-5" class="second-layer" d="M234,434.55l-101.6,40.56a324.37,324.37,0,0,0,117.06,191.1l68.07-89.14A240.3,240.3,0,0,1,234,434.55Z" />
-            <path id="second-layer-6" class="second-layer" d="M711.13,391.63a239.36,239.36,0,0,1-32,119.86l56.08,56.08a325.15,325.15,0,0,0,34-217.32H707.57A242.14,242.14,0,0,1,711.13,391.63Z" />
-            <path id="second-layer-7" class="second-layer cls-3" d="M677,179.11l-39.4,39.4a240,240,0,0,1,70,131.74H769.3A323.85,323.85,0,0,0,677,179.11Z" />
-            <path id="second-layer-8" class="second-layer cls-3" d="M500.5,630.28v102c101.35-15.63,187.22-78.17,234.75-164.74l-56.08-56.08A240.61,240.61,0,0,1,500.5,630.28Z" />
-            <path id="second-layer-9" class="second-layer cls-2" d="M470.63,632.13a239.54,239.54,0,0,1-153.15-55.06l-68.07,89.14a323.14,323.14,0,0,0,201.22,69.92,326.68,326.68,0,0,0,49.87-3.82v-102A243.44,243.44,0,0,1,470.63,632.13Z" />
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 38.125 -40.525" to="360 38.125 -40.525" dur="5s" repeatCount="indefinite" />
 
-            <g id="third-layer" transform-origin=center>
+          <path id="third-layer-1" class="cls-3" d="M322.84,399.06,234,434.55a240.3,240.3,0,0,0,83.53,142.52l60-78.57A169.75,169.75,0,0,1,322.84,399.06Z" />
+          <path id="third-layer-2" class="cls-2" d="M320.63,371.63a169.59,169.59,0,0,1,11-60.34l-80.6-17.93A241.71,241.71,0,0,0,234,434.55l88.89-35.49A171,171,0,0,1,320.63,371.63Z" />
+          <path id="third-layer-3" d="M490.21,201.63l2.11-49.52c-7.14-.64-14.38-1-21.69-1a239.65,239.65,0,0,0-98.56,21.06L405,224.76A169.11,169.11,0,0,1,490.21,201.63Z" />
+          <path id="third-layer-4" class="cls-3" d="M405,224.76l-32.9-52.57a241.37,241.37,0,0,0-121,121.17l80.6,17.93A170.53,170.53,0,0,1,405,224.76Z" />
+          <path id="third-layer-5" class="cls-2" d="M490.63,541.63A169.33,169.33,0,0,1,377.49,498.5l-60,78.57a239.54,239.54,0,0,0,153.15,55.06,243.44,243.44,0,0,0,29.87-1.85V541.33C497.23,541.52,493.94,541.63,490.63,541.63Z" />
+          <path id="third-layer-6" class="cls-3" d="M659.29,350.25h48.28a240,240,0,0,0-70-131.74L607.7,248.36A169.64,169.64,0,0,1,659.29,350.25Z" />
+          <path id="third-layer-7" class="cls-2" d="M490.21,201.63h.42A169.45,169.45,0,0,1,607.7,248.36l29.85-29.85a239.65,239.65,0,0,0-145.23-66.4Z" />
+          <path id="third-layer-8" class="cls-2" d="M660.63,371.63A169.22,169.22,0,0,1,632.69,465l46.48,46.48a239.36,239.36,0,0,0,32-119.86,242.14,242.14,0,0,0-3.56-41.38H659.29A171.4,171.4,0,0,1,660.63,371.63Z" />
+          <path id="third-layer-9" class="cls-3" d="M500.5,541.33v88.95A240.61,240.61,0,0,0,679.17,511.49L632.69,465A169.89,169.89,0,0,1,500.5,541.33Z" />
 
-              <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 38.125 -40.525" to="360 38.125 -40.525" dur="5s" repeatCount="indefinite" />
+          <g id="fourth-layer" transform-origin=center>
 
-              <path id="third-layer-1" class="third-layer cls-3" d="M322.84,399.06,234,434.55a240.3,240.3,0,0,0,83.53,142.52l60-78.57A169.75,169.75,0,0,1,322.84,399.06Z" />
-              <path id="third-layer-2" class="third-layer cls-2" d="M320.63,371.63a169.59,169.59,0,0,1,11-60.34l-80.6-17.93A241.71,241.71,0,0,0,234,434.55l88.89-35.49A171,171,0,0,1,320.63,371.63Z" />
-              <path id="third-layer-3" class="third-layer" d="M490.21,201.63l2.11-49.52c-7.14-.64-14.38-1-21.69-1a239.65,239.65,0,0,0-98.56,21.06L405,224.76A169.11,169.11,0,0,1,490.21,201.63Z" />
-              <path id="third-layer-4" class="third-layer cls-3" d="M405,224.76l-32.9-52.57a241.37,241.37,0,0,0-121,121.17l80.6,17.93A170.53,170.53,0,0,1,405,224.76Z" />
-              <path id="third-layer-5" class="third-layer cls-2" d="M490.63,541.63A169.33,169.33,0,0,1,377.49,498.5l-60,78.57a239.54,239.54,0,0,0,153.15,55.06,243.44,243.44,0,0,0,29.87-1.85V541.33C497.23,541.52,493.94,541.63,490.63,541.63Z" />
-              <path id="third-layer-6" class="third-layer cls-3" d="M659.29,350.25h48.28a240,240,0,0,0-70-131.74L607.7,248.36A169.64,169.64,0,0,1,659.29,350.25Z" />
-              <path id="third-layer-7" class="third-layer cls-2" d="M490.21,201.63h.42A169.45,169.45,0,0,1,607.7,248.36l29.85-29.85a239.65,239.65,0,0,0-145.23-66.4Z" />
-              <path id="third-layer-8" class="third-layer cls-2" d="M660.63,371.63A169.22,169.22,0,0,1,632.69,465l46.48,46.48a239.36,239.36,0,0,0,32-119.86,242.14,242.14,0,0,0-3.56-41.38H659.29A171.4,171.4,0,0,1,660.63,371.63Z" />
-              <path id="third-layer-9" class="third-layer cls-3" d="M500.5,541.33v88.95A240.61,240.61,0,0,0,679.17,511.49L632.69,465A169.89,169.89,0,0,1,500.5,541.33Z" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 58.5 -60.5" to="-360 58.5 -60.5" dur="5s" repeatCount="indefinite" />
 
-              <g id="fourth-layer" transform-origin=center>
-
-                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 58.5 -60.5" to="-360 58.5 -60.5" dur="5s" repeatCount="indefinite" />
-
-                <circle id="circle-fg-1" class="cls-2" cx="491" cy="372" r="171" />
-                <circle id="circle-fg-2" cx="559" cy="292.25" r="58" />
-                <circle id="circle-fg-3" class="cls-3" cx="451.81" cy="416.44" r="95.19" />
-              </g>
-            </g>
+            <circle id="circle-fg-1" class="cls-2" cx="491" cy="372" r="171" />
+            <circle id="circle-fg-2" cx="559" cy="292.25" r="58" />
+            <circle id="circle-fg-3" class="cls-3" cx="451.81" cy="416.44" r="95.19" />
           </g>
         </g>
       </g>

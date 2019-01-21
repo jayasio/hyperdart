@@ -11,8 +11,15 @@ body {
   width: 200px;
 }
 
-/*
-svg {
-  pointer-events: none;
-} */
-path, circle {}
+/* SVG classes*/
+.cls-1 {
+  fill: #ff5f40;
+}
+
+.cls-2 {
+  fill: #efefef;
+}
+
+.cls-3 {
+  fill: #a2b0ba;
+}
