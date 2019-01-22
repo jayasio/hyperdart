@@ -1,8 +1,3 @@
-// fragment selected
-function fun() {
-  alert("boom");
-}
-
 // hit.js
 var time = 1;
 var initialOffset = '1';

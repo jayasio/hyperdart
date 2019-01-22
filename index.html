@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Hyperdart</title>
-  <link rel="stylesheet" href="styles.css">
-  </script>
-  <script type="text/javascript" src="hit.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="appear.js"></script>
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865 865" height="90vh" width="90vw" class="middler">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865 865" height="90%" width="auto" class="middler">
 
     <circle id="orange-bg" class="cls-1" cx="432.5" cy="432.5" r="432.5" />
 
@@ -18,7 +17,7 @@
 
       <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 -1.875 -0.875" to="360 -1.875 -0.875" dur="30s" repeatCount="indefinite" />
 
-      <path id="first-layer-1" onclick="fun()" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
+      <path id="first-layer-1" onclick="adder()" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
       <path id="first-layer-2" class="cls-2" d="M126.13,411.63a323.15,323.15,0,0,1,31.26-139.11L48.73,248.34a425.52,425.52,0,0,0-32.09,273l115.71-46.19A326.3,326.3,0,0,1,126.13,411.63Z" />
       <path id="first-layer-3" class="cls-3" d="M332.68,109.24,285.41,33.68A424.91,424.91,0,0,0,48.73,248.34l108.66,24.18A325.57,325.57,0,0,1,332.68,109.24Z" />
       <path id="first-layer-4" class="cls-3" d="M769.3,350.25h77A422.66,422.66,0,0,0,727,129.09l-50,50A323.85,323.85,0,0,1,769.3,350.25Z" />
@@ -69,10 +68,15 @@
     </g>
   </svg>
 
+  <div id="holder">
+    <template id="component">
+      <div class="divr" style="width: 100px; height: 100px; background: blue;" onClick="removeElement(this.id)">
+        <svg class="loader-circle-container">
+          <circle class="loader-circle" r="40" cx="50" cy="50"></circle>
+        </svg>
+    </template>
+  </div>
+
 </body>
-
-<script>
-
-</script>
 
 </html>
