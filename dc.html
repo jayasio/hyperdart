@@ -1,73 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-         <link rel="stylesheet" type="text/css" href="dc.css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-         </script>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="dc.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="hit.js"></script>
+</head>
 
-    <body>
+<body>
 
-      <div id="backdrop"></div>
-      <div id = "circle"></div>
+  <div id="backdrop"></div>
+  <div id="circle"></div>
 
-    <div class="item html" id="xxx">
+  <div class="item html" id="xxx">
     <h2></h2>
     <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-     <g>
-      <title>Layer 1</title>
-      <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
-     </g>
+      <g>
+        <title>Layer 1</title>
+        <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none" />
+      </g>
     </svg>
-    </div>
+  </div>
 
-    </body>
+</body>
 
-    <script>
-    var time = 1;
-    var initialOffset = '1';
-    var i = 10; /* how long the timer will run (seconds) */
-    var count=0;
-
-    /* Need initial run as interval hasn't yet occured... */
-    $('.circle_animation').css('stroke-dashoffset', initialOffset-(1*(initialOffset/time)));
-
-
-
-
-$(document).ready(function(){
-  $('#xxx').hide();
-})
-    $('#circle').click(function(){
-      count++;
-      if (count==1)
-      {
-        $('#circle').css('animation-iteration-count', 12);
-
-      $('#xxx').show();
-      var interval = setInterval(function() {
-       $('h2').text(i);
-      if (i == time) {
-        $('.circle_animation').css('stroke-dashoffset', 440);
-        clearInterval(interval);
-        return;
-      }
-      var x = 440 - ((i-1)/time * 44);
-      $('.circle_animation').css('stroke-dashoffset', x);
-      i--;
-      }, 1000);
-    }
-
-    if (count==2)
-    {
-      //count=0;
-      $('#circle').css('animation-iteration-count', 0);
-      //$('#xxx').hide();
-
-    }
-
-    });
-
-    </script>
+</html>
