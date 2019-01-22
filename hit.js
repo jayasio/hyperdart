@@ -1,3 +1,9 @@
+// fragment selected
+function fun() {
+  alert("boom");
+}
+
+// hit.js
 var time = 1;
 var initialOffset = '1';
 var i = 10; /* how long the timer will run (seconds) */
@@ -6,15 +12,13 @@ var count = 0;
 /* Need initial run as interval hasn't yet occured... */
 $('.circle_animation').css('stroke-dashoffset', initialOffset - (1 * (initialOffset / time)));
 
-
-
-
 $(document).ready(function() {
   $('#xxx').hide();
 })
+
 $('#circle').click(function() {
   count++;
-  if (count == 1) {
+  if (count % 2 != 0) {
     $('#circle').css('animation-iteration-count', 12);
 
     $('#xxx').show();
@@ -31,10 +35,10 @@ $('#circle').click(function() {
     }, 1000);
   }
 
-  if (count == 2) {
-    //count=0;
+  if (count % 2 == 0) {
+    i = 10;
     $('#circle').css('animation-iteration-count', 0);
-    //$('#xxx').hide();
+    $('#xxx').hide();
 
   }
 
