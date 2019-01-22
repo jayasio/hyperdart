@@ -4,14 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Appear</title>
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="circles.css">
+  </script>
 </head>
 
 <body>
   <div id="btn" style="width: 100px; height: 100px; background: black; color: white;" onClick="adder()">Add</div>
   <div id="holder">
     <template id="component">
-      <div class="divr" style="width: 100px; height: 100px; background: blue;" onClick="removeElement(this.id)"></div>
+      <div class="divr" style="width: 100px; height: 100px; background: blue;" onClick="removeElement(this.id)">
+        <div id="countdown">
+          <div id="countdown-number"></div>
+          <svg>
+            <circle r="40" cx="50" cy="50"></circle>
+          </svg>
+        </div>
     </template>
   </div>
 
