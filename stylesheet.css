@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 90vmin 1fr;
+  grid-template-rows: 1fr 90vmin 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* SVG classes*/
+.cls-1 {
+  fill: #ff5f40;
+}
+
+.cls-2 {
+  fill: #efefef;
+}
+
+.cls-3 {
+  fill: #a2b0ba;
+}
+
+#holder {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+@media screen and (max-width: 1080px) {
+  #holder {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
+
+.divr {
+  display: inline-block;
+}
+
+/* Circles */
+/* ======= */
+.loader-circle-container {
+  width: 100px;
+  height: 100px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+.loader-circle {
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 5px;
+  stroke: white;
+  fill: none;
+  animation: countdown 10s linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+
+  to {
+    stroke-dashoffset: 314px;
+  }
+}
+
+/* ======= */
+/* Circles */
