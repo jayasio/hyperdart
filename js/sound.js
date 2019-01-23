@@ -16,11 +16,11 @@ function playon(parentId) {
   console.log('Playing ' + parentId);
   isFree = false;
 
-  //style clone for 'when playing'
+  //change clone while Playing
   const cloneOccupied = document.getElementById(parent.dataset.occupyId);
   cloneOccupied.style.width = '200px';
   cloneOccupied.style.height = '200px';
-  cloneOccupied.style.fill = 'green';
+  cloneOccupied.style.background = 'green';
 
   audio.onended = function() {
     parent.style.fill = '';
