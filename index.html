@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865 865" height="90%" width="auto" class="middler">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 865 865">
 
     <circle id="orange-bg" class="cls-1" cx="432.5" cy="432.5" r="432.5" />
 
@@ -61,7 +61,7 @@
             <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 58.5 -60.5" to="-360 58.5 -60.5" dur="5s" repeatCount="indefinite" />
 
             <circle id="circle-fg-1" class="cls-2" cx="491" cy="372" r="171" />
-            <circle id="circle-fg-2" onClick="playon(this.id)" cx="559" cy="292.25" r="58" />
+            <circle id="circle-fg-2" onClick="addToPlay(this.id)" cx="559" cy="292.25" r="58" />
             <circle id="circle-fg-3" class="cls-3" cx="451.81" cy="416.44" r="95.19" />
           </g>
         </g>
@@ -77,10 +77,6 @@
         </svg>
     </template>
   </div>
-
-  <audio id="myAudio">
-    <source src="assets/audio/vip.mp3" type="audio/mpeg">
-  </audio>
 
 </body>
 
