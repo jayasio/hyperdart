@@ -18,9 +18,9 @@
 
       <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 -1.875 -0.875" to="360 -1.875 -0.875" dur="30s" repeatCount="indefinite" />
 
-      <path id="first-layer-1" onclick="adder()" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
-      <path id="first-layer-2" class="cls-2" d="M126.13,411.63a323.15,323.15,0,0,1,31.26-139.11L48.73,248.34a425.52,425.52,0,0,0-32.09,273l115.71-46.19A326.3,326.3,0,0,1,126.13,411.63Z" />
-      <path id="first-layer-3" class="cls-3" d="M332.68,109.24,285.41,33.68A424.91,424.91,0,0,0,48.73,248.34l108.66,24.18A325.57,325.57,0,0,1,332.68,109.24Z" />
+      <path id="first-layer-1" onClick="clickHandler(this.id)" data-mode="unclicked" data-occupy-id="" d="M450.63,87.13a327.57,327.57,0,0,1,44.34,3l3.27-76.65A426.35,426.35,0,0,0,285.41,33.68l47.27,75.56A323.7,323.7,0,0,1,450.63,87.13Z" />
+      <path id="first-layer-2" onClick="clickHandler(this.id)" data-mode="unclicked" data-occupy-id="" class="cls-2" d="M126.13,411.63a323.15,323.15,0,0,1,31.26-139.11L48.73,248.34a425.52,425.52,0,0,0-32.09,273l115.71-46.19A326.3,326.3,0,0,1,126.13,411.63Z" />
+      <path id="first-layer-3" onClick="clickHandler(this.id)" data-mode="unclicked" data-occupy-id="" class="cls-3" d="M332.68,109.24,285.41,33.68A424.91,424.91,0,0,0,48.73,248.34l108.66,24.18A325.57,325.57,0,0,1,332.68,109.24Z" />
       <path id="first-layer-4" class="cls-3" d="M769.3,350.25h77A422.66,422.66,0,0,0,727,129.09l-50,50A323.85,323.85,0,0,1,769.3,350.25Z" />
       <path id="first-layer-5" class="cls-2" d="M677,179.11l50-50A422.34,422.34,0,0,0,498.24,13.5L495,90.15A323.5,323.5,0,0,1,677,179.11Z" />
       <path id="first-layer-6" class="cls-2" d="M846.31,350.25h-77a325.15,325.15,0,0,1-34,217.32l67.11,67.11a421.62,421.62,0,0,0,51.77-203A426.13,426.13,0,0,0,846.31,350.25Z" />
@@ -61,8 +61,8 @@
             <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 58.5 -60.5" to="-360 58.5 -60.5" dur="5s" repeatCount="indefinite" />
 
             <circle id="circle-fg-1" class="cls-2" cx="491" cy="372" r="171" />
-            <circle id="circle-fg-2" onClick="addToPlay(this.id)" cx="559" cy="292.25" r="58" />
-            <circle id="circle-fg-3" onClick="addToPlay(this.id)" class="cls-3" cx="451.81" cy="416.44" r="95.19" />
+            <circle id="circle-fg-2" cx="559" cy="292.25" r="58" />
+            <circle id="circle-fg-3" class="cls-3" cx="451.81" cy="416.44" r="95.19" />
           </g>
         </g>
       </g>
@@ -71,7 +71,7 @@
 
   <div id="holder">
     <template id="component">
-      <div class="divr" style="width: 100px; height: 100px; background: blue;" onClick="removeElement(this.id)">
+      <div class="divr">
         <svg class="loader-circle-container">
           <circle class="loader-circle" r="40" cx="50" cy="50"></circle>
         </svg>

@@ -7,26 +7,37 @@ var wrapFunction = function(fn, context, params) {
   };
 }
 
-function playon(clickedId) {
+function playon(parentId) {
 
-  var clicked = document.getElementById(clickedId);
-  var audio = new Audio('assets/audio/' + clickedId + '.mp3');
-
-  clicked.style.fill = 'red';
+  var parent = document.getElementById(parentId);
+  var audio = new Audio('assets/audio/' + parentId + '.mp3');
 
   audio.play();
-  console.log('Playing ' + clickedId);
+  console.log('Playing ' + parentId);
   isFree = false;
+
+  //style clone for 'when playing'
+  const cloneOccupied = document.getElementById(parent.dataset.occupyId);
+  cloneOccupied.style.width = '200px';
+  cloneOccupied.style.height = '200px';
+  cloneOccupied.style.fill = 'green';
+
   audio.onended = function() {
-    clicked.style.fill = '';
+    parent.style.fill = '';
     isFree = true;
     playNext();
+
+    //free up parent
+    parent.dataset.mode = 'unclicked';
+    removeClone(parent.dataset.occupyId);
+    parent.dataset.occupyId = '';
+    console.log(parentId + ' is free');
   }
 }
 
-function addToPlay(clickedId) {
-  queue.push(wrapFunction(playon, this, [clickedId]));
-  console.log('Added ' + clickedId);
+function addToPlay(parentId) {
+  queue.push(wrapFunction(playon, this, [parentId]));
+  console.log('Added ' + parentId + ' to queue');
   playNext();
 }
 
