@@ -15,9 +15,10 @@ function playon(clickedId) {
   clicked.style.fill = 'red';
 
   audio.play();
+  console.log('Playing ' + clickedId);
   isFree = false;
   audio.onended = function() {
-    clicked.style.fill = 'black';
+    clicked.style.fill = '';
     isFree = true;
     playNext();
   }
@@ -25,9 +26,8 @@ function playon(clickedId) {
 
 function addToPlay(clickedId) {
   queue.push(wrapFunction(playon, this, [clickedId]));
-  console.log(queue.length);
+  console.log('Added ' + clickedId);
   playNext();
-}
 }
 
 function playNext() {
