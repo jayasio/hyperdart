@@ -20,7 +20,6 @@ function playon(parentId) {
   const cloneOccupied = document.getElementById(parent.dataset.occupyId);
   cloneOccupied.style.width = '200px';
   cloneOccupied.style.height = '200px';
-  cloneOccupied.style.background = 'green';
 
   audio.onended = function() {
     parent.style.fill = '';

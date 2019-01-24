@@ -28,6 +28,10 @@ function clickHandler(parentId) {
     component.parentNode.appendChild(clone);
     console.log(clone.id + " is added");
 
+    clone.style.backgroundImage = "url('assets/image/" + parentId + ".jpg')";
+    console.log(clone.style.backgroundImage);
+
+
     setTimeout(function() {
       if (parent.dataset.mode == 'oneclicked') {
         console.log(parentId + " " + clone.id + " Timeout ended");
