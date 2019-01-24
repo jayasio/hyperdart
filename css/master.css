@@ -17,19 +17,6 @@ svg {
   grid-row: 2/3;
 }
 
-/* SVG classes*/
-.cls-1 {
-  fill: #ff5f40;
-}
-
-.cls-2 {
-  fill: #efefef;
-}
-
-.cls-3 {
-  fill: #a2b0ba;
-}
-
 #holder {
   grid-column: 3/4;
   grid-row: 1/4;
