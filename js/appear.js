@@ -49,7 +49,7 @@ function clickHandler(parentId) {
     console.log(clone.id + " is added");
 
     clone.querySelector('.imager').src = 'assets/image/' + parentId + '.jpg';
-    clone.querySelector('.loader-circle').style.stroke = colorArray[num];
+    clone.querySelector('.loader-circle').style.stroke = colorArray[num - 1];
 
     setTimeout(function() {
       if (parent.dataset.mode == 'oneclicked') {
