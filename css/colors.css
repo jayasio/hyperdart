@@ -1,15 +1,19 @@
 .orange {
-  fill: #f15a24;
+  fill: #ff7900;
 }
+
 .white {
   fill: #ccc;
 }
+
 .lightgray {
   fill: #e6e6e6;
 }
+
 .black {
   fill: #333;
 }
+
 .darkgray {
   fill: #b3b3b3;
 }
