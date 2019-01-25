@@ -35,27 +35,57 @@ svg {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: blue;
   background-image: '';
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+.imager {
+  margin: auto;
+  float: left;
+  padding: 11.75px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  opacity: 0.99;
+  z-index: 1;
+}
+
+.logo {
+  width: 191px;
+  height: 100px;
+  background: blue;
+  background-image: url('../assets/image/idc-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+}
+
 /* Circles */
 /* ======= */
 .loader-circle-container {
+  z-index: 2;
+  background-image: url(assets/);
+  position: absolute;
+  display: inline-block;
+  float: left;
   width: 100px;
   height: 100px;
   transform: rotateY(-180deg) rotateZ(-90deg);
 }
 
 .loader-circle {
-  stroke-dasharray: 314px;
+  stroke-dasharray: 267px;
   stroke-dashoffset: 0px;
   stroke-linecap: round;
   stroke-width: 5px;
-  stroke: white;
+  stroke: red;
   fill: none;
   animation: countdown 10s linear infinite forwards;
 }
@@ -66,7 +96,7 @@ svg {
   }
 
   to {
-    stroke-dashoffset: 314px;
+    stroke-dashoffset: 267px;
   }
 }
 

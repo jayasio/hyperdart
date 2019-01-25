@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/colors.css">
   <script type="text/javascript" src="js/appear.js"></script>
   <script type="text/javascript" src="js/sound.js"></script>
+  <script>document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
 </head>
 
 <body>
@@ -77,14 +79,18 @@
   </svg>
 
 
-  <div id="holder">
+  <div id="holder" data-color="0">
     <template id="component">
       <div class="divr">
+        <img class="imager" src="" alt="">
         <svg class="loader-circle-container">
-          <circle class="loader-circle" r="40" cx="50" cy="50"></circle>
+          <circle class="loader-circle" r="42.5" cx="50" cy="50"></circle>
         </svg>
+      </div>
     </template>
   </div>
+
+  <div class="logo"></div>
 
 </body>
 
