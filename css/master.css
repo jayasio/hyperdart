@@ -64,13 +64,13 @@ svg {
   position: absolute;
   z-index: 999;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 .instructions {
   font-family: 'Roboto', sans-serif;
   font-size: 1.125em;
-  width: 220px;
+  width: 235px;
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
