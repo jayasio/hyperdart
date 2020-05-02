@@ -1,6 +1,6 @@
 # hyperdart
 
-Experimental interactive installation for Industrial Design Centre's 50th anniversary.
+Experimental interactive installation to revisit the professors of IDC school of design.
 https://jayas.me/hyperdart
 
 Made by
